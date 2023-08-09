@@ -38,7 +38,7 @@ function conection(status) {
    }else if (status == 2){
       return ("Away");
    } else {
-      return ("offline");
+      return ("Offline");
    }
 }
 
@@ -50,13 +50,13 @@ function saludo(idioma) {
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
    if (idioma == "aleman"){
-      return ("Guten Tag!");
+      return "Guten Tag!";
    } else if (idioma == "mandarin"){
-      return ("Ni Hao!");
+      return "Ni Hao!";
    } else if (idioma == "ingles"){
-      return ("Hello");
+      return "Hello!";
    } else if (idioma == "undefined"){
-      return ("Hola!");
+      return "Hola!";
    }else{
       return ("Hola!");
    }
@@ -132,12 +132,12 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-if (num % 3 == 0){
-   return ("fizz");
+if (num % 3 == 0 && num % 5 == 0){
+   return ("fizzbuzz");
 } else if ( num % 5 == 0) {
    return ("buzz");
-} else if ( num % 3 == 0 && num % 5 == 0){
-   return ("fizzbuzz");
+} else if ( num % 3 == 0 ){
+   return "fizz";
 } else{
    return (false);
 }
