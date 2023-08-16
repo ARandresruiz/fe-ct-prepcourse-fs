@@ -154,7 +154,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    objetoProducto.calcularPrecioDescuento = function (){
       var  ValorDeDescuento = this.precio * this.porcentajeDeDescuento; //This para ingresar a la propiedad precio y propiedad procentajeDeDescuento
       var precioFinal = this.precio - ValorDeDescuento;
-      return precioFinal
+      return precioFinal 
    }; return objetoProducto;
 }
 
