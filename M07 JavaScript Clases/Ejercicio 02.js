@@ -37,7 +37,7 @@ function agregarMetodo() {
    // Ejemplo: "Juan, 22 años".
    // Tu código:
    //Se resuelve con prototipos
-   Persona.prototype.datos = function(){
+   Persona.prototype.datos = function(){   //Se utiliza prototype porque estamos creando el metodo por fuera de la clase.
       return (this.nombre+ ", " + this.edad + " años")
    }
 }
